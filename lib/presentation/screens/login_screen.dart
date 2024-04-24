@@ -12,7 +12,7 @@ class LoginScreen extends StatelessWidget {
     TextEditingController passwordController = TextEditingController();
 
     Future<void> _login() async {
-      String url = 'URL_DO_SEU_BACKEND_LOGIN';
+      String url = 'http://localhost:8080/auth/login';
 
       Map<String, String> body = {
         'email': emailController.text,

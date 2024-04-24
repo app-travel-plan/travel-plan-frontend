@@ -12,7 +12,7 @@ class RegisterScreen extends StatelessWidget {
   TextEditingController passwordController = TextEditingController();
 
   Future<void> _register(BuildContext context) async {
-    String url = '/register';
+    String url = 'http://localhost:8080/auth/register';
 
     Map<String, dynamic> body = {
       'nome': nameController.text,
